@@ -10,10 +10,7 @@ pipeline
         {
             steps
             {
-                withMaven(maven : 'MAVEN_PIPELINE')
-                {
-                    sh 'mvn clean install'
-                }
+                    sh "mvn clean install"
             }
         } 
     }
